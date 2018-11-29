@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class Recursion{
+    public static void main(String[]args){
+        Scanner scan = new Scanner(System.in);
+        int s = scan.nextInt(); 
+        System.out.println(fact(s));
+    }
+    public static int fact(int n){
+        if ( n == 1)
+            return 1;
+        else
+            return (n * fact(n-1));
+        }
+    }
